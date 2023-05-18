@@ -11,3 +11,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.lead{
+  color: rgb(0, 68, 255);
+  text-align: center;
+  font-size: 50px;
+  padding-top: 130px;
+}
+
+.black-line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.custom-image {
+  width: 500spx;
+}
+
+.lead{
+  background-image: url('./imagen/fondo.png');
+  height: 250px;
+}
+.tecn{
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-size: 60px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image {
+  width: 200px; 
+  height: 200px; 
+  margin-right: 60px;
+  width: 100%;
+  height: 450px; 
+}
+
+.pro{
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-size: 60px;
+}
+
+.pr-conter {
+  display: flex;
+}
+
+.pr {
+  width: 200px; 
+  height: 200px; 
+  margin-right: 60px;
+  width: 100%;
+  height: 450px; 
+}
+
+.box {
+  width: 600px; 
+  height: 400px; 
+  background-color: #f2f2f2;
+  border: 5px solid #ccc;
+  border-radius: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./imagen/nutricion.jpg');
+  height: 350px;
+}
+
+.text {
+  text-align: center;
+  color: #333; 
+  font-size: 62px; 
+}
+
+.not {
+  width: 600px; 
+  height: 400px; 
+  background-color: #f2f2f2;
+  border: 5px solid #ccc;
+  border-radius: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./imagen/taras.jpg');
+  height: 350px;
+}
+
+.notas {
+  text-align: center;
+  color: #817e7e; 
+  font-size: 62px; 
+}
