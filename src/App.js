@@ -6,7 +6,7 @@ import reat from './imagen/reat.png';
 import Git from './imagen/Git.png';
 import cypress from './imagen/cypress.png';
 import CommentForm from './CommentForm/CommentForm';
-import EmailForm from './EmailForm/EmailForm';
+import './CommentForm/CommentForm.css';
 
 function App() {
   const [comment, setComment] = useState('');
@@ -77,19 +77,12 @@ function App() {
 
       <div className="black-line"></div>
 
-      <div>
+      <div className="comen">
       <CommentForm
         comment={comment}
         onCommentSubmit={handleCommentSubmit}
         onCommentClear={handleCommentClear}
         submitted={commentSubmitted}
-      />
-
-      <EmailForm
-        email={email}
-        onEmailSubmitt={handleEmailSubmit}
-        onEmailClear={handleEmailClear}
-        submitted={emailSubmitted}
       />
 
       {commentSubmitted && (

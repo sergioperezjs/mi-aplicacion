@@ -14,28 +14,28 @@ code {
 .lead{
   color: rgb(0, 68, 255);
   text-align: center;
-  font-size: 50px;
-  padding-top: 130px;
+  font-size: 60px;
+  padding-top: 180px;
+}
+
+
+.lead{
+  background-image: url('./imagen/fondo.png');
+  height: 350px;
 }
 
 .black-line {
   width: 100%;
-  height: 2px;
+  height: 5px;
   background-color: black;
+  margin-top: 60px;
 }
 
-.custom-image {
-  width: 500spx;
-}
-
-.lead{
-  background-image: url('./imagen/fondo.png');
-  height: 250px;
-}
 .tecn{
   color: rgb(3, 3, 3);
   text-align: center;
   font-size: 60px;
+  padding-top: 50px;
 }
 
 .image-container {
@@ -47,13 +47,14 @@ code {
   height: 200px; 
   margin-right: 60px;
   width: 100%;
-  height: 300px; 
+  height: 155px; 
 }
 
 .pro{
   color: rgb(3, 3, 3);
   text-align: center;
   font-size: 60px;
+  padding-top: 50px
 }
 
 .pr-conter {
@@ -61,8 +62,8 @@ code {
 }
 
 .pr {
-  width: 200px; 
-  height: 200px; 
+  width: 300px; 
+  height: 300px; 
   margin-right: 60px;
   width: 100%;
   height: 450px; 
@@ -79,6 +80,7 @@ code {
   align-items: center;
   background-image: url('./imagen/nutricion.jpg');
   height: 350px;
+  margin-right: 60px;
 }
 
 .text {
@@ -98,10 +100,21 @@ code {
   align-items: center;
   background-image: url('./imagen/taras.jpg');
   height: 350px;
+  margin-right: 60px;
 }
 
 .notas {
   text-align: center;
   color: #817e7e; 
   font-size: 62px; 
+}
+
+body {
+  background-color: #0875c8;
+}
+
+.comen {
+  font-size: 30px;
+  background-color: #666666;
+  color: #f9f3f3; 
 }
