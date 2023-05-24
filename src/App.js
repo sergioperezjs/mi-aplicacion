@@ -14,10 +14,16 @@ function App() {
   const [commentSubmitted, setCommentSubmitted] = useState(false);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleCommentSubmit = (comment) => {
+
+  const handleClear = () => {
+    setComment('');
+    setEmail('');
+  };
+
+  function handleCommentSubmit(comment) {
     setComment(comment);
     setCommentSubmitted(true);
-  };
+  }
 
   const handleEmailSubmit = (email) => {
     setEmail(email);
@@ -32,6 +38,7 @@ function App() {
   const handleEmailClear = () => {
     setEmail('');
     setEmailSubmitted(false);
+
   };
   return (
     <div className="App">
@@ -80,7 +87,7 @@ function App() {
 
       <EmailForm
         email={email}
-        onEmailSubmit={handleEmailSubmit}
+        onEmailSubmitt={handleEmailSubmit}
         onEmailClear={handleEmailClear}
         submitted={emailSubmitted}
       />
@@ -88,12 +95,14 @@ function App() {
       {commentSubmitted && (
         <div>
           <p>{comment}</p>
+          <button type="button" onClick={handleClear}>Borrar</button>
         </div>
       )}
 
       {emailSubmitted && (
         <div>
           <p>{email}</p>
+          <button type="button" onClick={handleClear}>Borrar</button>
         </div>
       )}
     </div>

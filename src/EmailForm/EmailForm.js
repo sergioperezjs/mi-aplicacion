@@ -12,14 +12,10 @@ import React, { useState } from 'react';
       setSubmitted(true);
     }
   };
-  function handleInputChange(event) {
+
+  const handleInputChange = (event) => {
     setEmail(event.target.value);
     setSubmitted(false); // Reinicia el estado de submitted al cambiar el comentario
-  }
-
-
-  const handleClear = () => {
-    setEmail('');
   };
 
   return (
@@ -27,8 +23,6 @@ import React, { useState } from 'react';
       <label htmlFor="email">Correo Electrónico:</label>
       <input type="email" id="email" value={email} onChange={handleInputChange} />
       <button type="submit">Enviar</button>
-      <button type="button" onClick={handleClear}>Borrar</button>
-      {submitted && <p>Comentario enviado</p>}
     </form>
   );
 }

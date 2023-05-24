@@ -18,18 +18,11 @@ function CommentForm({ onCommentSubmit }) {
     setSubmitted(false); // Reinicia el estado de submitted al cambiar el comentario
   };
 
-  const handleClear = () => {
-    setComment('');
-    setSubmitted(false);
-  };
-
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="comment">Comentario:</label>
       <textarea id="comment" value={comment} onChange={handleInputChange} />
       <button type="submit">Enviar</button>
-      <button type="button" onClick={handleClear}>Borrar</button>
-      {submitted && <p>Comentario enviado</p>}
     </form>
   );
 }
